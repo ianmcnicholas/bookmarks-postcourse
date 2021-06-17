@@ -38,3 +38,6 @@ end
 * Run `rackup` from command line to start server
 
 The project is now ready to be constructed in full.
+
+### Databases
+* When creating a database, it is good practice to record the creation and migration instructions for it to allow others to work with it.  This can be done with a `db` directory, with a `migrations` sub-directory inside it.
