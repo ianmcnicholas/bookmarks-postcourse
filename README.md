@@ -2,7 +2,7 @@
 
 This is a repeat of the bookmarks challenge from the Makers Coding Bootcamp.
 
-#### Steps taken in creating this project
+### Steps taken in creating this project
 * Project directory created and linked to github.
 * `myapp.rb` created in the main folder
 * Example code in `myapp.rb` shown here:
@@ -36,3 +36,5 @@ run! if app_file == $0
 end
 ```
 * Run `rackup` from command line to start server
+
+The project is now ready to be constructed in full.

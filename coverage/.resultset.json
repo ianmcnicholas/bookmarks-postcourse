@@ -1,0 +1,81 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/ianmcnicholas/PROJECTS/bookmarks-postcourse/myapp.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/ianmcnicholas/PROJECTS/bookmarks-postcourse/lib/bookmark.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ianmcnicholas/PROJECTS/bookmarks-postcourse/spec/bookmark_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ianmcnicholas/PROJECTS/bookmarks-postcourse/spec/features/viewing_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1623922786
+  }
+}
