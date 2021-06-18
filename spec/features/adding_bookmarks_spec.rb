@@ -8,6 +8,15 @@ feature 'adding bookmarks' do
     expect(page).to have_button 'Add bookmark'
   end
 
+  scenario 'adding bookmark and seeing it on bookmarks page' do
+    visit('/')
+    fill_in "url", with: 'https://www.github.com'
+    fill_in "title", with: 'Github'
+    click_button "Add bookmark"
+    visit('/bookmarks')
+    expect(page).to have_content 'Github'
+  end
+
   # scenario 'visiting the bookmarks page' do
   #   connection = PG.connect(dbname: 'bookmark_manager_test')
   #
