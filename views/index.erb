@@ -1,1 +1,23 @@
 <h1>Welcome to your homepage</h1>
+
+<style>
+     div {
+       margin-bottom: 10px;
+     }
+     label {
+       display: inline-block;
+       width: 100px;
+       text-align: right;
+     }
+   </style>
+<h3>Add a new bookmark here</h3>
+<form action="/bookmarks" method="post">
+  <label>Page title: </label>
+  <input id="title" type="text" name="text">
+  <br><br>
+  <label>Web address: </label>
+  <input id="url" type="text" name="text">
+  <br><br>
+  <label></label>
+  <input type="submit" value="Add bookmark">
+</form>
