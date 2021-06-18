@@ -6,7 +6,6 @@ require './lib/bookmark'
 
 # this is the name of the app
 class MyApp < Sinatra::Base
-
   get '/' do
     erb :index
   end

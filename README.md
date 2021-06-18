@@ -41,3 +41,23 @@ The project is now ready to be constructed in full.
 
 ### Databases
 * When creating a database, it is good practice to record the creation and migration instructions for it to allow others to work with it.  This can be done with a `db` directory, with a `migrations` sub-directory inside it.
+
+#### Testing with databases
+* In the actual script itself, include an `if` statement to check if you are in ENV['ENVIRONMENT'] = 'test'.
+* In the `spec_helper` file, include the following or similar:
+```
+require_relative './setup_test_database'
+ENV['ENVIRONMENT'] = 'test'
+RSpec.configure do |config|
+  config.before(:each) do
+    setup_test_database
+  end
+end
+```
+Where the `setup_test_database` is a method that TRUNCATES the database in question:
+```
+require 'pg'
+p "Setting up test database..."
+connection = PG.connect(dbname: 'bookmark_manager_test')
+connection.exec("TRUNCATE bookmarks;")
+```
